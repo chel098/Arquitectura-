@@ -1,4 +1,4 @@
-# Arquitectura
+# Gestion de inventarios y ventas para una tienda de barrio
 ## Problema
 Lss tiendas de barrios tienen un constante problema a la hora de hacer las ventas que se tienen ya que en estos casos estas solo llevan un registro manual de cada una de sus ventas al igual que hacen lo mismo con sus inventarios ya que estos los hacen de forma manual contando cuantos productos les quedas cada mes.
 ## Propuesta general de solucion 
