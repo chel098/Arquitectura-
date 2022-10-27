@@ -1,0 +1,40 @@
+GET http://localhost:8080/v1/ProductList
+Accept: application/json
+###
+POST http://localhost:8080/v1/AddProduct
+Accept: application/json
+Content-type: application/json
+
+ {
+
+   "descripcion": "Computadora de mesa",
+    "nombre": "entel   VH23876",
+    "stock": 10,
+    "precio_compra": 2000.0,
+    "precio_venta": 2400.0,
+    "proveedor_CPR": 1,
+    "fecha_vencimiento": "2022-09-13"
+  }
+###
+DELETE http://localhost:8080/v1/DeleteProduct/4
+###
+GET http://localhost:8080/v1/ProductName
+Accept: application/json
+###
+PUT http://localhost:8080/v1/ChangeProduct
+Accept: application/json
+Content-type: application/json
+
+{
+  "cpd": 5,
+  "descripcion": "Computadora de mesan para juegos",
+  "nombre": "entel   VH23876",
+  "stock": 10,
+  "precio_compra": 2000.0,
+  "precio_venta": 2400.0,
+  "proveedor_CPR": 1,
+  "fecha_vencimiento": "2022-09-13"
+}
+###
+GET http://localhost:8080/v1/FindProduct/2
+###

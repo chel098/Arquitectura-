@@ -1,0 +1,37 @@
+GET http://localhost:8080/v1/SalesList
+Accept: application/json
+###
+
+POST http://localhost:8080/v1/AddSale
+Accept: application/json
+Content-type: application/json
+
+{
+  "fecha": "2022-08-10",
+  "cantidad": 2,
+  "producto_CPD": 1,
+  "precio_Total": 3000.0,
+  "cliente_CC": 1
+
+
+}
+###
+DELETE http://localhost:8080/v1/DeleteSale/4
+###
+PUT http://localhost:8080/v1/ChangeSale
+Accept: application/json
+Content-type: application/json
+
+{
+  "cv": 2,
+  "fecha": "2022-08-10",
+  "cantidad": 2,
+  "producto_CPD": 1,
+  "precio_Total": 3000.0,
+  "cliente_CC": 1
+
+
+}
+###
+GET http://localhost:8080/v1/FindSale/2
+###

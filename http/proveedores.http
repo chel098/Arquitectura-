@@ -1,0 +1,30 @@
+GET http://localhost:8080/v1/ProvList
+Accept: application/json
+###
+
+POST http://localhost:8080/v1/AddProv
+Accept: application/json
+Content-type: application/json
+
+{
+  "nombre": "Sony",
+  "descripcion": "Proveedor de videojuegos"
+
+}
+###
+DELETE http://localhost:8080/v1/DeleteProv/3
+###
+
+PUT http://localhost:8080/v1/ChangeProv
+Accept: application/json
+Content-type: application/json
+
+{
+  "cpr": 2,
+  "nombre": "Sony",
+  "descripcion": "Proveedor de consolas"
+
+}
+###
+GET http://localhost:8080/v1/FindAdmin/2
+###

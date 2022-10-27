@@ -8,12 +8,14 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 @Repository
-public interface ProductDao extends JpaRepository<Producto, List<Integer>> {
+public interface ProductDao extends JpaRepository<Producto, Integer> {
 
     @Query(
-        value ="SELECT new com.example.ucb.arquitectura.dto.ProductRequest(a.Nombre,a.Descripcion,a.Stock,a.Precio_compra,a.Precio_venta,a.Fecha_vencimiento)" +
+        value ="SELECT new com.example.ucb.arquitectura.dto.ProductRequest(a.Nombre,a.Stock)" +
                 "FROM Producto a"
     )
-    public List<ProductRequest>findProductoList();
+    List<ProductRequest>findProductoWithName();
+
 
 }
+

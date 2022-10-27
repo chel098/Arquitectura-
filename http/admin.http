@@ -1,0 +1,33 @@
+GET http://localhost:8080/v1/AdminList
+Accept: application/json
+###
+POST http://localhost:8080/v1/AddAdmin
+Accept: application/json
+Content-type: application/json
+
+{
+  "password": "Juan123",
+  "nombre": "juan",
+  "usuario": "Admin",
+  "ci": "9284323"
+
+}
+###
+DELETE http://localhost:8080/v1/DeleteAdmin/4
+###
+
+PUT http://localhost:8080/v1/ChangeAdmin
+Accept: application/json
+Content-type: application/json
+
+{
+  "ca": 3,
+  "password": "Juan321",
+  "nombre": "juanssjdgj",
+  "usuario": "Admin",
+  "ci": "9284323"
+
+}
+###
+GET http://localhost:8080/v1/FindAdmin/2
+###
